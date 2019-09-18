@@ -1,8 +1,10 @@
-package com.takatutustudio.projectrecyclerview;
+package com.takatutustudio.projectrecyclerview.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.takatutustudio.projectrecyclerview.R;
 
 public class MainActivity extends AppCompatActivity {
 
