@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -47,7 +48,7 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CardViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull final CardViewHolder holder, final int position) {
         holder.tvJudulFilm.setText(getListMovie().get(position).getJudulFilm());
         holder.tvTglRilis.setText(getListMovie().get(position).getTglRilis());
         holder.tvDesFilm.setText(getListMovie().get(position).getDescFilm());
@@ -57,13 +58,24 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
                 .override(130,170)
                 .into(holder.imgPhoto);
 
-
+        //Event Click Button Detail
+        //Berpindah dengan membawa data ke halaman DetailMovie
         holder.btnDetail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent detailMovie = new Intent(context, DetailMovie.class);
                 detailMovie.putExtra(DetailMovie.EXTRA_MOVIE, listMovie.get(position));
                 context.startActivity(detailMovie);
+            }
+        });
+
+        //Event Click Button Share
+        //Memunculkan text Toast
+        holder.btnShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(holder.btnShare.getContext(), "Share " +
+                        listMovie.get(holder.getAdapterPosition()).getJudulFilm(),Toast.LENGTH_SHORT).show();
             }
         });
 
