@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailMovie">
+    tools:context=".activity.DetailMovie">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar_layout"
@@ -35,7 +35,7 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-                app:title="@string/judul_film" />
+                app:title="@string/judul_film"/>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 </com.google.android.material.appbar.AppBarLayout>
 
@@ -51,8 +51,8 @@
 
             <ImageView
                 android:id="@+id/img_photo"
-                android:layout_width="170dp"
-                android:layout_height="180dp"
+                android:layout_width="130dp"
+                android:layout_height="170dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:scaleType="fitXY"
