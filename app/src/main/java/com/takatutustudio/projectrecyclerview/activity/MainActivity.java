@@ -22,6 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Menganti Judul Halaman secara langsung
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("Home Movie");
+        }
+        //--
+
         rvMovie     = findViewById(R.id.rv_movie);
         rvMovie.setHasFixedSize(true);
 
@@ -30,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Memanggil RecyclerView berupa list di halaman utama
         showRecyclerViewList();
+        //--
     }
 
     private void showRecyclerViewList() {
