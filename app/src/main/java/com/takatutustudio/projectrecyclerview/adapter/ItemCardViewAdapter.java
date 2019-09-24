@@ -58,6 +58,18 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
                 .override(130,170)
                 .into(holder.imgPhoto);
 
+       //Event Click ItemView
+        //Berpindah halaman dengan cara mengklik itemview
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent detailMovie = new Intent(context, DetailMovie.class);
+                detailMovie.putExtra(DetailMovie.EXTRA_MOVIE, listMovie.get(position));
+                context.startActivity(detailMovie);
+            }
+        });
+        //---
+
         //Event Click Button Detail
         //Berpindah dengan membawa data ke halaman DetailMovie
         holder.btnDetail.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +80,7 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
                 context.startActivity(detailMovie);
             }
         });
+        //--
 
         //Event Click Button Share
         //Memunculkan text Toast
@@ -78,6 +91,7 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
                         listMovie.get(holder.getAdapterPosition()).getJudulFilm(),Toast.LENGTH_SHORT).show();
             }
         });
+        //--
 
     }
 

@@ -40,12 +40,23 @@ public class DetailMovie extends AppCompatActivity {
                 .load(movie.getPhoto())
                 .into(imgPhotoTollbar);
 
+        //Memunculkan Icon Back Di Halaman Detail Costum Toolbar
+        //langkah 1 - Mendeklarasikan terlebih dahulu ID dari Toolbar
+        //disini ID tollbar yaitu titleToolbar
+        //lalu periksa AndroidManifest.xml
+        //tambahkan di activity DetailMovie | android:parentActivityName=".activity.MainActivity"
+        setSupportActionBar(titleToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //--
+
         titleToolbar.setTitle(movie.getJudulFilm());
         tvJudulFilm.setText(movie.getJudulFilm());
         tvTglRilis.setText(movie.getTglRilis());
         tvRangking.setText(movie.getRangking());
         tvKepopuleran.setText(movie.getKepopuleran());
         tvDesFilm.setText(movie.getDescFilm());
+
+
 
     }
 }
