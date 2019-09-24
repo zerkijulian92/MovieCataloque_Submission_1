@@ -56,7 +56,5 @@ public class DetailMovie extends AppCompatActivity {
         tvKepopuleran.setText(movie.getKepopuleran());
         tvDesFilm.setText(movie.getDescFilm());
 
-
-
     }
 }

@@ -1,10 +1,13 @@
 package com.takatutustudio.projectrecyclerview.activity;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.takatutustudio.projectrecyclerview.R;
 import com.takatutustudio.projectrecyclerview.adapter.ItemCardViewAdapter;
@@ -45,4 +48,25 @@ public class MainActivity extends AppCompatActivity {
         cardAdapter.setListMovie(list);
         rvMovie.setAdapter(cardAdapter);
     }
+
+    //Memunculkan Menu Action Bar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        setMode(item.getItemId());
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void setMode(int itemId) {
+        switch (itemId) {
+            case R.id.about:
+                break;
+        }
+    }
+    //--
 }

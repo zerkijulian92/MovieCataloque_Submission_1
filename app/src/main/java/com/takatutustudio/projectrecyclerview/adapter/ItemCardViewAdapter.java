@@ -24,7 +24,7 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
     private Context context;
     private ArrayList<Movie> listMovie;
 
-   //hasil dari generate Constructor Context context
+    //hasil dari generate Constructor Context context
     public ItemCardViewAdapter(Context context) {
         this.context = context;
     }
@@ -55,10 +55,10 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
 
         Glide.with(context)
                 .load(getListMovie().get(position).getPhoto())
-                .override(130,170)
+                .override(130, 170)
                 .into(holder.imgPhoto);
 
-       //Event Click ItemView
+        //Event Click ItemView
         //Berpindah halaman dengan cara mengklik itemview
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -88,11 +88,10 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
             @Override
             public void onClick(View view) {
                 Toast.makeText(holder.btnShare.getContext(), "Share " +
-                        listMovie.get(holder.getAdapterPosition()).getJudulFilm(),Toast.LENGTH_SHORT).show();
+                        listMovie.get(holder.getAdapterPosition()).getJudulFilm(), Toast.LENGTH_SHORT).show();
             }
         });
         //--
-
     }
 
     @Override
@@ -105,16 +104,14 @@ public class ItemCardViewAdapter extends RecyclerView.Adapter<ItemCardViewAdapte
         TextView tvJudulFilm, tvTglRilis, tvDesFilm;
         Button btnShare, btnDetail;
 
-
-
         CardViewHolder(@NonNull View itemView) {
             super(itemView);
-            imgPhoto        = itemView.findViewById(R.id.img_photo);
-            tvJudulFilm     = itemView.findViewById(R.id.tv_judul_film);
-            tvTglRilis      = itemView.findViewById(R.id.tv_tgl_rilis);
-            tvDesFilm       = itemView.findViewById(R.id.tv_desc_film);
-            btnShare        = itemView.findViewById(R.id.btn_share);
-            btnDetail       = itemView.findViewById(R.id.btn_detail);
+            imgPhoto = itemView.findViewById(R.id.img_photo);
+            tvJudulFilm = itemView.findViewById(R.id.tv_judul_film);
+            tvTglRilis = itemView.findViewById(R.id.tv_tgl_rilis);
+            tvDesFilm = itemView.findViewById(R.id.tv_desc_film);
+            btnShare = itemView.findViewById(R.id.btn_share);
+            btnDetail = itemView.findViewById(R.id.btn_detail);
         }
     }
 }
