@@ -16,6 +16,12 @@ import com.takatutustudio.projectrecyclerview.model.Movie;
 
 import java.util.ArrayList;
 
+//Note:
+//Untuk mengubah font di Action bar silahkan cek di styles.xml
+//Cek AppTheme
+//Ubah Font di Android:fontfamily
+//---
+
 public class MainActivity extends AppCompatActivity {
     private RecyclerView rvMovie;
     private ArrayList<Movie> list;
