@@ -1,5 +1,6 @@
 # MovieCataloque_Submission_1
 MovieCataloque_Submission_1 adalah aplikasi android yang menampilkan list Movie aplikasi ini dibuat untuk tujuan tugas submission 1 dicoding Android Pemula dan Android Expert Dicoding 2019.
+bisa juga dijadikan sebagai referensi dalam pembuatan aplikasi yang serupa.
 
 # Fitur Aplikasi
 - Halaman List Movie ( RecyclerView )
