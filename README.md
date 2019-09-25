@@ -12,7 +12,7 @@ bisa juga dijadikan sebagai referensi dalam pembuatan aplikasi yang serupa.
 - Button Top Up ( Menggunakan Toast )
 - Icon Back Toolbar
 - Collapsing Toolbar
-- Costume Font Action Bar
+- Costume Font Action Bar ( Mengubah Font Di Action Bar )
 
 # Aplikasi Ini Menerapkan
 - RecyclerView
@@ -37,5 +37,11 @@ bisa juga dijadikan sebagai referensi dalam pembuatan aplikasi yang serupa.
 # Referensi Layout
 ![Layout Referensi Dicoding Submission 1](https://user-images.githubusercontent.com/50509675/65590387-ea542080-dfb4-11e9-8900-1617ca201909.png)
 
+# ScreenShoot Aplikasi
+![Halaman List Movie](https://user-images.githubusercontent.com/50509675/65590743-7a926580-dfb5-11e9-8dfb-e6bb637a02fb.png)
+
+![Halaman Detail Movie](https://user-images.githubusercontent.com/50509675/65590798-9138bc80-dfb5-11e9-9f60-1231cfd0e2ff.png)
+
+![Halaman About](https://user-images.githubusercontent.com/50509675/65590841-a6155000-dfb5-11e9-9e71-4598cf41140d.png)
 
 
