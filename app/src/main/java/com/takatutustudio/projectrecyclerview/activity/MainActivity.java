@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Menganti Judul Halaman secara langsung
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Home Movie");
+            getSupportActionBar().setTitle("Movie Catalogue");
         }
         //--
 
