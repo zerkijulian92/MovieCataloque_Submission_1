@@ -34,4 +34,7 @@ bisa juga dijadikan sebagai referensi dalam pembuatan aplikasi yang serupa.
 # Android Studio Version
 - Menggunakan Android Studio Version 3.5 ( Telah Menggunakan AndroidX )
 
+# Referensi Layout
+
+
 
