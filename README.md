@@ -23,6 +23,7 @@ bisa juga dijadikan sebagai referensi dalam pembuatan aplikasi yang serupa.
 
 # Font Yang Digunakan
 - Poppins
+- pacifico Regular
 
 # Settingan Dependecies
 - implementation 'androidx.cardview:cardview:1.0.0'
