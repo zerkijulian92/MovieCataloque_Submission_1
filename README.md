@@ -34,6 +34,9 @@ bisa juga dijadikan sebagai referensi dalam pembuatan aplikasi yang serupa.
 # Android Studio Version
 - Menggunakan Android Studio Version 3.5 ( Telah Menggunakan AndroidX )
 
+# Content Referensi
+- https://www.themoviedb.org/discover/movie
+
 # Referensi Layout
 ![Layout Referensi Dicoding Submission 1](https://user-images.githubusercontent.com/50509675/65590387-ea542080-dfb4-11e9-8900-1617ca201909.png)
 
