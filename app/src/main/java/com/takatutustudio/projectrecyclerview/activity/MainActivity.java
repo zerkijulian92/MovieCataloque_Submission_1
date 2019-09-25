@@ -1,13 +1,13 @@
 package com.takatutustudio.projectrecyclerview.activity;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.takatutustudio.projectrecyclerview.R;
 import com.takatutustudio.projectrecyclerview.adapter.ItemCardViewAdapter;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //--
 
-        rvMovie     = findViewById(R.id.rv_movie);
+        rvMovie = findViewById(R.id.rv_movie);
         rvMovie.setHasFixedSize(true);
 
         list = new ArrayList<>();
@@ -65,6 +65,8 @@ public class MainActivity extends AppCompatActivity {
     private void setMode(int itemId) {
         switch (itemId) {
             case R.id.about:
+                Intent gotoabout = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(gotoabout);
                 break;
         }
     }

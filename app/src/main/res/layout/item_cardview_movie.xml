@@ -31,8 +31,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_photo"
@@ -46,6 +47,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
+            android:fontFamily="@font/poppinsmedium"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_photo"
@@ -53,6 +55,7 @@
             tools:text="@string/tgl_rilis" />
 
         <TextView
+            android:fontFamily="@font/poppinsregular"
             android:id="@+id/tv_desc_film"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -60,7 +63,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:ellipsize="end"
-            android:maxLines="3"
+            android:maxLines="2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/img_photo"
             app:layout_constraintTop_toBottomOf="@+id/tv_tgl_rilis"
@@ -75,14 +78,15 @@
             android:layout_marginEnd="2dp"
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
-            android:background="@drawable/bg_button"
+            android:background="@drawable/bg_btn_red"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Share"
             android:textColor="@android:color/white"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_detail"
             app:layout_constraintStart_toEndOf="@+id/img_photo"
-            app:layout_constraintTop_toBottomOf="@+id/tv_desc_film"
-            android:text="Share"/>
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_film" />
 
         <Button
             android:id="@+id/btn_detail"
@@ -93,14 +97,15 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:layout_weight="1"
-            android:background="@drawable/bg_button"
+            android:background="@drawable/bg_btn_red"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/detail"
             android:textColor="@android:color/white"
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/btn_share"
-            app:layout_constraintTop_toBottomOf="@+id/tv_desc_film"
-            android:text="@string/detail" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_film" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -5,4 +5,8 @@
     <string name="desc_film">"The film tells the saga of Guima, a young poet who believes he suffers from “solar ultra violence” during the hottest summer in 50 years in Salvador. The alleged disease is caused by the relentless heat that hits"</string>
     <string name="share">Share</string>
     <string name="detail">Detail</string>
+    <string name="zerky_yulyandri">Zerky Yulyandri</string>
+    <string name="email">zerkijuliandri92@gmail.com</string>
+    <string name="job">Android Developer</string>
+    <string name="logout">Logout</string>
 </resources>
