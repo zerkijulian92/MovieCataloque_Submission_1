@@ -35,6 +35,7 @@ bisa juga dijadikan sebagai referensi dalam pembuatan aplikasi yang serupa.
 - Menggunakan Android Studio Version 3.5 ( Telah Menggunakan AndroidX )
 
 # Referensi Layout
+![Layout Referensi Dicoding Submission 1](https://user-images.githubusercontent.com/50509675/65590387-ea542080-dfb4-11e9-8900-1617ca201909.png)
 
 
 
